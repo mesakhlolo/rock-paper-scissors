@@ -56,7 +56,7 @@ function game() {
     console.log("----------");
     if (checkWinner(playerSelection, computerSelection) == "Player") {
       scorePlayer++;
-    } else if (checkWinner(playerSelection, computerSelection)) {
+    } else if (checkWinner(playerSelection, computerSelection) == "Computer") {
       scoreComputer++;
     }
   }
