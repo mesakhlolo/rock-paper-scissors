@@ -5,11 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Rock Paper Scissors Game</h1>
-    <p>This project is built to learn Javascript foundations.</p>
+    <div class="container">
+      <h1>Rock Paper Scissors</h1>
 
+      <div class="game">
+        <div class="scoreboard">
+          <h2>Player Score: <span id="player-score">0</span></h2>
+          <h2>Computer Score: <span id="computer-score">0</span></h2>
+        </div>
+
+        <div class="choices">
+          <button class="choice" onclick="playRound('rock')">Rock</button>
+          <button class="choice" onclick="playRound('paper')">Paper</button>
+          <button class="choice" onclick="playRound('scissors')">
+            Scissors
+          </button>
+        </div>
+
+        <h3 id="round-result">Choose your weapon!</h3>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
